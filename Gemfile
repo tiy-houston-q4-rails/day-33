@@ -36,3 +36,4 @@ gem 'mini_magick', '4.0.0.rc'
 gem 'rails_12factor'
 gem 'mail_form' # send email from forms, like a contact form
 gem 'pg_search'
+gem 'acts-as-taggable-on', '~> 3.4'
