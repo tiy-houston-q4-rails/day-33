@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "/albums/tag/:tag_name" => "albums#tagged", as: :album_tag
   post "/albums" => "albums#create", as: :albums
 
+  post "/albums/:id/vote/:yay_or_nay" => "albums#vote", as: :vote
+
   get "/contact" => "contact_forms#new", as: :contact
   post "/contacts" => "contact_forms#create", as: :contact_forms
   get "/thanks" => "contact_forms#thanks", as: :thanks

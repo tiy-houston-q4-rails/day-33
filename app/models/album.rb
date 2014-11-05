@@ -1,5 +1,5 @@
 class Album < ActiveRecord::Base
-  acts_as_taggable 
+  acts_as_taggable
   include PgSearch
   pg_search_scope :search,
                   against: [:name, :description],
@@ -10,4 +10,6 @@ class Album < ActiveRecord::Base
   validates :name, :photo, presence: true
 
   mount_uploader :photo, PhotoUploader
+
+  acts_as_voteable
 end
