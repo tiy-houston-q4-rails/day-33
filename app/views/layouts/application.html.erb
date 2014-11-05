@@ -12,13 +12,19 @@
 <div class="container">
 
 <div class="row">
-  <div class="col-xs-1 col-xs-push-10">
-    <%= link_to new_album_path do %>
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-plus fa-stack-1x"></i>
-      </span>
-    <% end %>
+  <div class="col-xs-12">
+    <div class="pull-right">
+      <p>
+      <%= link_to new_album_path do %>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-plus fa-stack-1x"></i>
+        </span>
+      <% end %>
+
+      <%= link_to "Contact Us", contact_path, class: "btn btn-default"%>
+    </p>
+    </div>
   </div>
 </div>
 

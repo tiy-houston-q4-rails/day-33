@@ -1,0 +1,10 @@
+<div class="page-header">
+  <h1>Create Us!! <small>We are nice people</small></h1>
+</div>
+
+<%= simple_form_for @contact_form do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :message, as: :text %>
+  <%= f.submit class: "btn btn-primary btn-lg" %>
+<% end %>
