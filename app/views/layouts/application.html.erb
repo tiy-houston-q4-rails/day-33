@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Albumart</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-xs-1 col-xs-push-10">
+    <%= link_to new_album_path do %>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-plus fa-stack-1x"></i>
+      </span>
+    <% end %>
+  </div>
+</div>
+
+<%= yield %>
+</div>
+
+</body>
+</html>
